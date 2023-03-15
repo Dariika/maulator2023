@@ -73,6 +73,7 @@
                         android:weightSum="4">
 
                         <Button
+
                             android:id="@+id/bmode"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -80,7 +81,7 @@
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="enginer mode"
+                            android:text="@string/mode"
                             android:textColor="@color/ruby"
                             android:textSize="15sp"
                             tools:targetApi="lollipop" />
@@ -93,9 +94,9 @@
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="copy"
+                            android:text="@string/copy"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bpaste"
@@ -105,9 +106,9 @@
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="paste"
+                            android:text="@string/paste"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/binfo"
@@ -117,9 +118,9 @@
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="info"
+                            android:text="@string/info"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 

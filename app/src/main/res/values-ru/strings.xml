@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Маулятор</string>
+    <string name="mode">Режим</string>
+    <string name="theme_select">Выбор темы</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_kids">Детская</string>
+    <string name="copy">Копировать</string>
+    <string name="paste">Вставить</string>
+    <string name="settings">Настройки</string>
+    <string name="info">Информация</string>
+</resources>

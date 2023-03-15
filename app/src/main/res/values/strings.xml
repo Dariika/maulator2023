@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Maulator</string>
+    <string name="mode">Mode</string>
+    <string name="theme_select">Theme selection</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_kids">Kids</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="settings">Settings</string>
+    <string name="info">Info</string>
 </resources>
