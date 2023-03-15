@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -35,12 +36,14 @@ class MainActivity : AppCompatActivity() {
     lateinit var bequal: Button
     lateinit var bdot: Button
     lateinit var bdiv: Button
+    lateinit var buttoninfo: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // инициализируем переменные
+        buttoninfo = findViewById(R.id.binfo)
         tvsec = findViewById(R.id.idTVSecondary)
         tvMain = findViewById(R.id.idTVprimary)
         bac = findViewById(R.id.bac)
@@ -69,6 +72,11 @@ class MainActivity : AppCompatActivity() {
         bdiv = findViewById(R.id.bdiv)
 
         // добавление прослушивателя кликов к кнопкам
+        buttoninfo.setOnClickListener {
+            val intent = Intent(this, info::class.java)
+            startActivity(intent)
+        }
+
         b1.setOnClickListener {
             // в нижней строке мы добавляем
             // выражение для нашего текстового представления

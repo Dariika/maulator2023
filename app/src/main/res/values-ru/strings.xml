@@ -10,4 +10,8 @@
     <string name="paste">Вставить</string>
     <string name="settings">Настройки</string>
     <string name="info">Информация</string>
+    <string name="about_app"> Справка </string>
+    <string name="about"> О приложении </string>
+    <string name="group"> Данный проект разработан студентами \n Мурманского Арктического Государственного Университета. </string>
+    <string name="direction"> "Режим" позволяет переключаться между режимами "Обычный" и "Инженерный" \n Используйте "Обычный" режим для базовых математических операций, "Инженерный" — для сложных расчетов. \n</string>
 </resources>
