@@ -12,5 +12,6 @@
     <string name="about_app"> Direction </string>
     <string name="about"> About the APP </string>
     <string name="group"> This project was developed by students \n of the Murmansk Arctic State University. </string>
+    <string name="theme"> Themes </string>
     <string name="direction"> "Mode" allows you to switch between "Normal" and "Engineering" modes \n Use "Normal" mode for basic mathematical operations, "Engineering" - for complex calculations. \n </string>
 </resources>

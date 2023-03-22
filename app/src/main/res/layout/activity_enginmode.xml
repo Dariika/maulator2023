@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black_shade_3"
-    tools:context=".MainActivity">
+    tools:context=".enginmode">
 
     <TextView
         android:id="@+id/idTVSecondary"
@@ -59,18 +59,17 @@
                 android:orientation="vertical"
                 android:weightSum="7">
 
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        android:weightSum="4">
+                        android:weightSum="5">
 
                         <Button
 
@@ -86,57 +85,6 @@
                             android:textSize="15sp"
                             tools:targetApi="lollipop" />
 
-                        <Button
-                            android:id="@+id/btheme"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:layout_weight="1"
-                            android:backgroundTint="@color/black_shade_2"
-                            android:padding="6dp"
-                            android:text="@string/theme"
-                            android:textColor="@color/ruby"
-                            android:textSize="10sp" />
-
-                        <Button
-                            android:id="@+id/bn"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:layout_weight="1"
-                            android:backgroundTint="@color/black_shade_2"
-                            android:padding="6dp"
-                            android:text="///"
-                            android:textColor="@color/ruby"
-                            android:textSize="10sp" />
-
-                        <Button
-                            android:id="@+id/binfo"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:layout_weight="1"
-                            android:backgroundTint="@color/black_shade_2"
-                            android:padding="6dp"
-                            android:text="@string/info"
-                            android:textColor="@color/ruby"
-                            android:textSize="10sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="4">
 
                         <Button
                             android:id="@+id/bac"
@@ -164,28 +112,110 @@
                             android:textSize="15sp" />
 
                         <Button
-                            android:id="@+id/bcopy"
+                            android:id="@+id/btheme"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="@string/copy"
+                            android:text="@string/theme"
                             android:textColor="@color/ruby"
                             android:textSize="10sp" />
 
                         <Button
-                            android:id="@+id/bpaste"
+                            android:id="@+id/bn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="@string/paste"
+                            android:text="///"
                             android:textColor="@color/ruby"
                             android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <Button
+                            android:id="@+id/bsin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_shade_2"
+                            android:padding="6dp"
+                            android:text="sin"
+                            android:textAllCaps="false"
+                            android:textColor="@color/ruby"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bcos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_shade_2"
+                            android:padding="6dp"
+                            android:text="cos"
+                            android:textAllCaps="false"
+                            android:textColor="@color/ruby"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_shade_2"
+                            android:padding="6dp"
+                            android:text="tan"
+                            android:textAllCaps="false"
+                            android:textColor="@color/ruby"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/blog"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_shade_2"
+                            android:padding="6dp"
+                            android:text="log"
+                            android:textAllCaps="false"
+                            android:textColor="@color/ruby"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bln"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_shade_2"
+                            android:padding="6dp"
+                            android:text="ln"
+                            android:textAllCaps="false"
+                            android:textColor="@color/ruby"
+                            android:textSize="15sp" />
+
 
                     </LinearLayout>
 
@@ -472,7 +502,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        android:weightSum="3">
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/bpi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_shade_2"
+                            android:padding="6dp"
+                            android:text="π"
+                            android:textColor="@color/ruby"
+                            android:textSize="15sp" />
 
                         <Button
                             android:id="@+id/b0"
