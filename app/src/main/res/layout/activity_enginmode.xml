@@ -82,7 +82,7 @@
                             android:padding="6dp"
                             android:text="@string/mode"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp"
+                            android:textSize="12sp"
                             tools:targetApi="lollipop" />
 
 
