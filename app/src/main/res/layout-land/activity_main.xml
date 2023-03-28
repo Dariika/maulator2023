@@ -26,7 +26,7 @@
     <TextView
         android:id="@+id/idTVprimary"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:layout_below="@id/idTVSecondary"
         android:background="@color/black_shade_3"
         android:gravity="bottom"
@@ -75,7 +75,7 @@
                         <Button
 
                             android:id="@+id/bmode"
-                            android:layout_width="match_parent"
+                            android:layout_width="645dp"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
@@ -83,14 +83,13 @@
                             android:padding="6dp"
                             android:text="@string/mode"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             tools:targetApi="lollipop" />
-
 
 
                         <Button
                             android:id="@+id/binfo"
-                            android:layout_width="match_parent"
+                            android:layout_width="645dp"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
@@ -102,7 +101,7 @@
 
                         <Button
                             android:id="@+id/bcopy"
-                            android:layout_width="match_parent"
+                            android:layout_width="645dp"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
@@ -114,7 +113,7 @@
 
                         <Button
                             android:id="@+id/bpaste"
-                            android:layout_width="match_parent"
+                            android:layout_width="645dp"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
@@ -126,7 +125,7 @@
 
                         <Button
                             android:id="@+id/bac"
-                            android:layout_width="match_parent"
+                            android:layout_width="635dp"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
@@ -134,7 +133,7 @@
                             android:padding="6dp"
                             android:text="AC"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp"
+                            android:textSize="10sp"
                             tools:targetApi="lollipop" />
 
                     </LinearLayout>
@@ -153,21 +152,21 @@
                         android:orientation="horizontal"
                         android:weightSum="4">
 
-<!--                        <Button-->
-<!--                            android:id="@+id/language"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:layout_margin="3dp"-->
-<!--                            android:layout_weight="1"-->
-<!--                            android:backgroundTint="@color/black_shade_2"-->
-<!--                            android:padding="6dp"-->
-<!--                            android:text="C"-->
-<!--                            android:textColor="@color/ruby"-->
-<!--                            android:textSize="15sp" />-->
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/language"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:layout_margin="3dp"-->
+                        <!--                            android:layout_weight="1"-->
+                        <!--                            android:backgroundTint="@color/black_shade_2"-->
+                        <!--                            android:padding="6dp"-->
+                        <!--                            android:text="C"-->
+                        <!--                            android:textColor="@color/ruby"-->
+                        <!--                            android:textSize="15sp" />-->
 
                         <Button
                             android:id="@+id/light"
-                            android:layout_width="match_parent"
+                            android:layout_width="604dp"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
@@ -175,7 +174,7 @@
                             android:padding="6dp"
                             android:text="@string/light"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/dark"
@@ -187,7 +186,7 @@
                             android:padding="6dp"
                             android:text="@string/dark"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/kids"
@@ -199,7 +198,7 @@
                             android:padding="6dp"
                             android:text="@string/kids"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bc"
@@ -211,7 +210,7 @@
                             android:padding="6dp"
                             android:text="C"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
 
                     </LinearLayout>
@@ -241,7 +240,7 @@
                             android:text="x!"
                             android:textAllCaps="false"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bsquare"
@@ -254,7 +253,7 @@
                             android:text="x²"
                             android:textAllCaps="false"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bsqrt"
@@ -266,7 +265,7 @@
                             android:padding="6dp"
                             android:text="√"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/binv"
@@ -279,7 +278,7 @@
                             android:text="1/x"
                             android:textAllCaps="false"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bdiv"
@@ -291,7 +290,7 @@
                             android:padding="6dp"
                             android:text="÷"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 
@@ -319,7 +318,7 @@
                             android:padding="6dp"
                             android:text="7"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/b8"
@@ -331,7 +330,7 @@
                             android:padding="6dp"
                             android:text="8"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/b9"
@@ -343,7 +342,7 @@
                             android:padding="6dp"
                             android:text="9"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bmul"
@@ -355,7 +354,7 @@
                             android:padding="6dp"
                             android:text="×"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 
@@ -383,7 +382,7 @@
                             android:padding="6dp"
                             android:text="4"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/b5"
@@ -395,7 +394,7 @@
                             android:padding="6dp"
                             android:text="5"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/b6"
@@ -407,7 +406,7 @@
                             android:padding="6dp"
                             android:text="6"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bminus"
@@ -419,7 +418,7 @@
                             android:padding="6dp"
                             android:text="-"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 
@@ -447,7 +446,7 @@
                             android:padding="6dp"
                             android:text="1"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/b2"
@@ -459,7 +458,7 @@
                             android:padding="6dp"
                             android:text="2"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/b3"
@@ -471,7 +470,7 @@
                             android:padding="6dp"
                             android:text="3"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bplus"
@@ -483,7 +482,7 @@
                             android:padding="6dp"
                             android:text="+"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 
@@ -511,7 +510,7 @@
                             android:padding="6dp"
                             android:text="0"
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bdot"
@@ -523,7 +522,7 @@
                             android:padding="6dp"
                             android:text="."
                             android:textColor="#fff"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/bequal"
@@ -535,7 +534,7 @@
                             android:padding="6dp"
                             android:text="="
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                     </LinearLayout>
 

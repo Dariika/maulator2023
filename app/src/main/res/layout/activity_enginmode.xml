@@ -57,7 +57,95 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:weightSum="7">
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <Button
+
+                                android:id="@+id/bmode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/black_shade_2"
+                                android:padding="6dp"
+                                android:text="@string/mode"
+                                android:textColor="@color/ruby"
+                                android:textSize="15sp"
+                                tools:targetApi="lollipop" />
+
+
+
+                            <Button
+                                android:id="@+id/binfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/black_shade_2"
+                                android:padding="6dp"
+                                android:text="@string/info"
+                                android:textColor="@color/ruby"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/bcopy"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/black_shade_2"
+                                android:padding="6dp"
+                                android:text="@string/copy"
+                                android:textColor="@color/ruby"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/bpaste"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/black_shade_2"
+                                android:padding="6dp"
+                                android:text="@string/paste"
+                                android:textColor="@color/ruby"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/bac"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/black_shade_2"
+                                android:padding="6dp"
+                                android:text="AC"
+                                android:textColor="@color/ruby"
+                                android:textSize="15sp"
+                                tools:targetApi="lollipop" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -69,35 +157,55 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        android:weightSum="5">
+                        android:weightSum="4">
+
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/language"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:layout_margin="3dp"-->
+                        <!--                            android:layout_weight="1"-->
+                        <!--                            android:backgroundTint="@color/black_shade_2"-->
+                        <!--                            android:padding="6dp"-->
+                        <!--                            android:text="C"-->
+                        <!--                            android:textColor="@color/ruby"-->
+                        <!--                            android:textSize="15sp" />-->
 
                         <Button
-
-                            android:id="@+id/bmode"
+                            android:id="@+id/light"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="@string/mode"
+                            android:text="@string/light"
                             android:textColor="@color/ruby"
-                            android:textSize="12sp"
-                            tools:targetApi="lollipop" />
-
+                            android:textSize="15sp" />
 
                         <Button
-                            android:id="@+id/bac"
+                            android:id="@+id/dark"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
-                            android:text="AC"
+                            android:text="@string/dark"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp"
-                            tools:targetApi="lollipop" />
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/kids"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_shade_2"
+                            android:padding="6dp"
+                            android:text="@string/kids"
+                            android:textColor="@color/ruby"
+                            android:textSize="15sp" />
 
                         <Button
                             android:id="@+id/bc"
@@ -111,29 +219,6 @@
                             android:textColor="@color/ruby"
                             android:textSize="15sp" />
 
-                        <Button
-                            android:id="@+id/btheme"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:layout_weight="1"
-                            android:backgroundTint="@color/black_shade_2"
-                            android:padding="6dp"
-                            android:text="@string/theme"
-                            android:textColor="@color/ruby"
-                            android:textSize="10sp" />
-
-                        <Button
-                            android:id="@+id/bn"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:layout_weight="1"
-                            android:backgroundTint="@color/black_shade_2"
-                            android:padding="6dp"
-                            android:text="///"
-                            android:textColor="@color/ruby"
-                            android:textSize="10sp" />
 
                     </LinearLayout>
 
@@ -220,6 +305,8 @@
                     </LinearLayout>
 
                 </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
