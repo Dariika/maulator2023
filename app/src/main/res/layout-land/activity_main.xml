@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/idTVSecondary"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="40dp"
         android:background="@color/black_shade_3"
         android:gravity="bottom"
         android:maxLines="1"
@@ -77,7 +77,7 @@
                             android:id="@+id/bmode"
                             android:layout_width="645dp"
                             android:layout_height="match_parent"
-                            android:layout_margin="3dp"
+                            android:layout_margin="1dp"
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"

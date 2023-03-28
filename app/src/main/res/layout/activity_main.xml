@@ -77,7 +77,7 @@
                             android:id="@+id/bmode"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="3dp"
+                            android:layout_margin="1dp"
                             android:layout_weight="1"
                             android:backgroundTint="@color/black_shade_2"
                             android:padding="6dp"
@@ -110,7 +110,7 @@
                             android:padding="6dp"
                             android:text="@string/copy"
                             android:textColor="@color/ruby"
-                            android:textSize="10sp" />
+                            android:textSize="8sp" />
 
                         <Button
                             android:id="@+id/bpaste"
