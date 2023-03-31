@@ -5,21 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_shade_3"
     tools:context=".enginmode">
 
     <TextView
         android:id="@+id/idTVSecondary"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/black_shade_3"
         android:gravity="bottom"
         android:maxLines="1"
         android:padding="10dp"
         android:paddingTop="30dp"
         android:text=""
         android:textAlignment="viewEnd"
-        android:textColor="@color/white"
+        android:textColor="#040303"
         android:textSize="15sp"
         tools:ignore="RtlCompat" />
 
@@ -28,13 +26,12 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@id/idTVSecondary"
-        android:background="@color/black_shade_3"
         android:gravity="bottom"
         android:maxLines="1"
         android:padding="10dp"
         android:text=""
         android:textAlignment="viewEnd"
-        android:textColor="#fff"
+        android:textColor="#040303"
         android:textSize="50sp"
         tools:ignore="RtlCompat" />
 
@@ -42,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/idTVprimary"
-        android:background="@color/black_shade_1"
+        android:id="@+id/Mainlayout"
         app:cardCornerRadius="4dp"
         app:cardElevation="2dp">
 
@@ -50,7 +47,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:background="@color/black_shade_1"
             android:orientation="vertical">
 
             <LinearLayout

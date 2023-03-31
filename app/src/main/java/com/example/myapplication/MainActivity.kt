@@ -1,11 +1,16 @@
 package com.example.myapplication
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,6 +41,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var bdiv: Button
     lateinit var buttoninfo: Button
     lateinit var bmode: Button
+    lateinit var Mainlayout: CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,11 +74,53 @@ class MainActivity : AppCompatActivity() {
         bequal = findViewById(R.id.bequal)
         bdot = findViewById(R.id.bdot)
         bdiv = findViewById(R.id.bdiv)
+        Mainlayout = findViewById(R.id.Mainlayout)
 
         // добавление прослушивателя кликов к кнопкам
         buttoninfo.setOnClickListener {
             val intent = Intent(this, info::class.java)
             startActivity(intent)
+        }
+
+        var buttonCopy: Button = findViewById(R.id.bcopy)
+        var buttonPaste: Button = findViewById(R.id.bpaste)
+        buttonCopy.setOnClickListener {
+            val textToCopy = tvMain.text
+            val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            val clipData = ClipData.newPlainText("text", textToCopy)
+            clipboardManager.setPrimaryClip(clipData)
+        }
+
+        buttonPaste.setOnClickListener {
+            val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+            tvMain.text = clipboardManager.primaryClip?.getItemAt(0)?.text
+        }
+
+        var light: Button = findViewById(R.id.light)
+        light.setOnClickListener{
+            Mainlayout.setBackgroundColor(Color.WHITE)
+            tvMain.setBackgroundColor(Color.WHITE)
+            tvMain.setTextColor(Color.BLACK)
+            tvsec.setBackgroundColor(Color.WHITE)
+            tvsec.setTextColor(Color.BLACK)
+        }
+
+        var dark: Button = findViewById(R.id.dark)
+        dark.setOnClickListener{
+            Mainlayout.setBackgroundColor(Color.BLACK)
+            tvMain.setBackgroundColor(Color.BLACK)
+            tvMain.setTextColor(Color.WHITE)
+            tvsec.setBackgroundColor(Color.BLACK)
+            tvsec.setTextColor(Color.WHITE)
+        }
+
+        var kids: Button = findViewById(R.id.kids)
+        kids.setOnClickListener{
+            Mainlayout.setBackgroundColor(Color.rgb(168,228,160))
+            tvMain.setBackgroundColor(Color.rgb(179,159,122))
+            tvMain.setTextColor(Color.rgb(255,155,170))
+            tvsec.setBackgroundColor(Color.rgb(119,221,119))
+            tvsec.setTextColor(Color.rgb(127,181,181))
         }
 
         bmode.setOnClickListener {

@@ -8,6 +8,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#2A6A1D</color>
 
     <!--three different shades of black color-->
     <color name="black_shade_1">#4871a5</color>
