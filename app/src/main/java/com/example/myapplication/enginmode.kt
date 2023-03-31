@@ -42,6 +42,8 @@ class enginmode : AppCompatActivity() {
     lateinit var bdot: Button
     lateinit var bdiv: Button
     lateinit var bmode: Button
+    lateinit var buttoninfo: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,8 +80,14 @@ class enginmode : AppCompatActivity() {
         bdot = findViewById(R.id.bdot)
         bdiv = findViewById(R.id.bdiv)
         bmode = findViewById(R.id.bmode)
+        buttoninfo = findViewById(R.id.binfo)
 
         // adding on click listener to our all buttons.
+
+        buttoninfo.setOnClickListener {
+            val intent = Intent(this, info::class.java)
+            startActivity(intent)
+        }
 
         bmode.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
