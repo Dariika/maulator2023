@@ -177,7 +177,7 @@
                             android:padding="6dp"
                             android:text="@string/light"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/dark"
@@ -189,7 +189,7 @@
                             android:padding="6dp"
                             android:text="@string/dark"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
 
                         <Button
                             android:id="@+id/kids"
@@ -201,7 +201,7 @@
                             android:padding="6dp"
                             android:text="@string/kids"
                             android:textColor="@color/ruby"
-                            android:textSize="15sp" />
+                            android:textSize="10sp" />
                         <Button
                             android:id="@+id/bsch"
                             android:layout_width="match_parent"

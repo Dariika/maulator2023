@@ -14,7 +14,7 @@
     <string name="light"> Light </string>
     <string name="dark"> Dark </string>
     <string name="kids"> Kids </string>
-    <string name="group"> The authors of this project are students \n of the Murmansk Arctic State University: \n Sabukevich Mark Andreevich \n Khromova Daria Maksimovna \n Chernyshev Artem Alekseevich </string>
+    <string name="group"> The authors of this project are students \n of the Murmansk Arctic State University: \n Sabukevich Mark Andreevich @MORKOWK1N \n Khromova Daria Maksimovna @Dariika \n Chernyshev Artem Alekseevich @DayvioN-DN \n https://github.com/Dariika/maulator2023 </string>
     <string name="direction"> "Mode" allows you to switch between "Normal" and "Engineering" modes \n Use "Normal" mode for basic mathematical operations, "Engineering" - for complex calculations. \n
         Sine - press button "sin", enter the number and press button "=" \n Cosine - press button "cos", enter the number and press button "=" \n
         Tangent - press button "tan", enter the number and press button "=" \n Logarithm - press button "log", enter the number and press button "=" \n Natural logarithm - press button "ln", enter the number and press button "=" \n
