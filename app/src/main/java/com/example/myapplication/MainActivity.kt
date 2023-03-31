@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
             tvMain.text = (tvMain.text.toString() + "/")
         }
         binv.setOnClickListener {
-            tvMain.text = (tvMain.text.toString() + "^" + "(-1)")
+            tvMain.text = (tvMain.text.toString() + "*" + "(-1)")
         }
 
 
@@ -164,9 +164,16 @@ class MainActivity : AppCompatActivity() {
         bequal.setOnClickListener {
             val str: String = tvMain.text.toString()
             val result: Double = evaluate(str)
-            val r = result.toString()
-            tvMain.setText(r)
-            tvsec.text = str
+            if (result % 1 > 0) {
+                val r = result.toString()
+                tvMain.setText(r)
+                tvsec.text = str
+            }
+            else {
+                val r = result.toInt().toString()
+                tvMain.setText(r)
+                tvsec.text = str
+            }
         }
         bac.setOnClickListener {
             // при нажатии на кнопку ac очищаем

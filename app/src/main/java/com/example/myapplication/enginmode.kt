@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.math.pow
 
 
 class enginmode : AppCompatActivity() {
@@ -34,6 +35,7 @@ class enginmode : AppCompatActivity() {
     lateinit var b3: Button
     lateinit var b2: Button
     lateinit var b1: Button
+    lateinit var bsch: Button
     lateinit var bpi: Button
     lateinit var bmul: Button
     lateinit var bminus: Button
@@ -72,6 +74,7 @@ class enginmode : AppCompatActivity() {
         b3 = findViewById(R.id.b3)
         b2 = findViewById(R.id.b2)
         b1 = findViewById(R.id.b1)
+        bsch = findViewById(R.id.bsch)
         bpi = findViewById(R.id.bpi)
         bmul = findViewById(R.id.bmul)
         bminus = findViewById(R.id.bminus)
@@ -155,7 +158,7 @@ class enginmode : AppCompatActivity() {
             tvMain.text = (tvMain.text.toString() + "tan")
         }
         binv.setOnClickListener {
-            tvMain.text = (tvMain.text.toString() + "^" + "(-1)")
+            tvMain.text = (tvMain.text.toString() + "*" + "(-1)")
         }
         bln.setOnClickListener {
             tvMain.text = (tvMain.text.toString() + "ln")
@@ -183,6 +186,12 @@ class enginmode : AppCompatActivity() {
                 tvMain.text = (tvMain.text.toString() + "*")
             }
         }
+        bsch.setOnClickListener {
+            val str: String = tvMain.text.toString()
+            if (!str.get(index = str.length - 1).equals("N")) {
+                tvMain.text = (tvMain.text.toString() + "N")
+            }
+        }
         bsqrt.setOnClickListener {
             if (tvMain.text.toString().isEmpty()) {
                 // if the entered number is empty we are displaying an error message.
@@ -205,9 +214,16 @@ class enginmode : AppCompatActivity() {
             val result: Double = evaluate(str)
             // on below line we are getting result
             // and setting it to text view.
-            val r = result.toString()
-            tvMain.setText(r)
-            tvsec.text = str
+            if (result % 1 > 0) {
+                val r = result.toString()
+                tvMain.setText(r)
+                tvsec.text = str
+            }
+            else {
+                val r = result.toInt().toString()
+                tvMain.setText(r)
+                tvsec.text = str
+            }
         }
         bac.setOnClickListener {
             // on clicking on ac button we are clearing
@@ -225,21 +241,7 @@ class enginmode : AppCompatActivity() {
             }
         }
         bsquare.setOnClickListener {
-            if (tvMain.text.toString().isEmpty()) {
-                // if the entered number is empty we are displaying an error message.
-                Toast.makeText(this, "Please enter a valid number..", Toast.LENGTH_SHORT).show()
-            } else {
-                // on below line we are getting the expression and then calculating the square of the number
-                val d: Double = tvMain.getText().toString().toDouble()
-                // on below line we are calculating the square.
-                val square = d * d
-                // after calculating the square we
-                // are setting it to text view.
-                tvMain.setText(square.toString())
-                // on below line we are setting
-                // the d to secondary text view.
-                tvsec.text = "$d²"
-            }
+            tvMain.text = (tvMain.text.toString() + "^")
         }
         bfact.setOnClickListener {
             if (tvMain.text.toString().isEmpty()) {
@@ -318,7 +320,12 @@ class enginmode : AppCompatActivity() {
                 var x = parseFactor()
                 while (true) {
                     if (eat('*'.toInt())) x *= parseFactor() // multiplication
-                    else if (eat('/'.toInt())) x /= parseFactor() // division
+                    else if (eat('/'.toInt())) x /= parseFactor()
+                    else if (eat('/'.toInt())) x /= parseFactor()
+                    else if (eat('^'.toInt())) x =  x.pow(parseFactor())
+                    else if (eat('N'.toInt())){ val binary = parseFactor().toInt()
+                        val ter = Integer.toString(x.toInt(), binary).toDouble()
+                        x = ter}
                     else return x
                 }
             }
